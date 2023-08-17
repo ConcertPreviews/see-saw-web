@@ -1,10 +1,15 @@
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 
 import { GlobalStyle } from '@/styles/GlobalStyle';
 // import './globals.css';
 import StyledComponentsRegistry from '@/utils/libs/registry';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  // variable: '--font-poppins',
+  weight: ['400', '500', '600'],
+});
 
 export const metadata = {
   title: 'see-saw',
@@ -14,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <StyledComponentsRegistry>
           <GlobalStyle />
           {children}
