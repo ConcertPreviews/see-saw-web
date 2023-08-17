@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
 ${reset}
 
 #root, body, html {
+    font-size: 62.5%; //px -> rem (px//10으로 rem 단위 사용 가능)
     max-width: 37.5rem;
     min-height: calc(var(--vh, 1vh) * 100);
     margin: 0 auto;
