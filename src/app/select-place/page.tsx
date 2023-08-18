@@ -4,17 +4,19 @@ import styled from 'styled-components';
 
 const SelectPlacePage = () => {
   return (
-    <SelPlaceWrapper>
-      <header>
-        <Title>시야를 미리 볼 장소를 선택하세요</Title>
-      </header>
-      <PlaceImgContainer>
-        <div>하나</div>
-        <div>둘</div>
-        <div>셋</div>
-        <div>넷</div>
-      </PlaceImgContainer>
-    </SelPlaceWrapper>
+    <>
+      <SelPlaceWrapper>
+        <header>
+          <Title>시야를 미리 볼 장소를 선택하세요</Title>
+        </header>
+        <PlaceImgContainer>
+          <div>하나</div>
+          <div>둘</div>
+          <div>셋</div>
+          <div>넷</div>
+        </PlaceImgContainer>
+      </SelPlaceWrapper>
+    </>
   );
 };
 
@@ -25,8 +27,12 @@ const SelPlaceWrapper = styled.section`
   flex-direction: column;
   gap: 3.3rem;
 
+  width: 100%;
+  height: 100dvh;
+
   align-items: center;
-  margin-top: 4.2rem;
+  padding-top: 4.2rem;
+  background-image: url('/images/MainBackground.jpg');
 `;
 
 const Title = styled.h1`
