@@ -24,7 +24,6 @@ const SelectPlacePage = () => {
             </PlaceBtn>
           );
         })}
-        {/* <PlaceBtn>{'고려대학교\n녹지운동장'}</PlaceBtn> */}
       </PlaceImgContainer>
     </SelPlaceWrapper>
   );
